@@ -47,7 +47,7 @@ const Vis = () => {
         let frameId
 
         const scene = new THREE.Scene()
-        const camera = new THREE.PerspectiveCamera(75, width / height, 0.1, 100)
+        const camera = new THREE.PerspectiveCamera(75, width / height, 0.1, 1000)
         const renderer = new THREE.WebGLRenderer({ antialias: true })
         const geometry = new THREE.SphereGeometry(2, 32, 16)
         const material = new THREE.MeshNormalMaterial({ wireframe: true })
@@ -115,7 +115,7 @@ const Vis = () => {
         }
     }, [isAnimating])
 
-    return <div className="vis h-[250px] w-[250px]" ref={mount} onClick={() => setAnimating(!isAnimating)} />
+    return <div className="vis h-[198px] w-[210px]" ref={mount} onClick={() => setAnimating(!isAnimating)} />
 }
 
 export default Vis;
