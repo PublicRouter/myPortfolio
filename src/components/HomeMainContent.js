@@ -9,11 +9,11 @@ function HomeMainContent( {handlePageChange} ) {
 
  
   return (
-    <div className="flex flex-col min-h-[80vh] justify-center">
+    <div className="flex flex-col min-h-[80vh] max-h-[80vh] justify-center">
     {/* image circle wrapper */}
-      <div className="shadow-xl mb-8 mx-auto w-48 h-48 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full flex justify-center items-center">
+      <div className="shadow-xl mb-8 mx-auto w-48  h-48 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full flex justify-center items-center">
         <div className="shadow-xl m-auto w-44 h-44 relative bg-blue-200 rounded-full flex justify-center items-center">
-          <img src={image1} alt="" className="bg-blue-300 w-[150px] h-[150px] md:w-[165px] md:h-[165px] rounded-full" />
+          <img src={image1} alt="" className="bg-blue-300 w-[160px] h-[160px] md:w-[165px] md:h-[165px] rounded-full" />
         </div>
       </div>
       {/* Full Stack Developer Text */}

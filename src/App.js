@@ -11,7 +11,6 @@ import Experience from "./components/Experience"
 import Contact from './components/Contact'
 
 function App() {
-
   const [currentPage, setCurrentPage] = useState('HomeMainContent');
 
   // check value of currentPage state
@@ -38,7 +37,6 @@ function App() {
 
   //switching state of currentPage
   const handlePageChange = (page) => setCurrentPage(page);
-
   // console.log("this is my currentPage", currentPage)
 
   // function renderPageTest() {
@@ -58,7 +56,7 @@ function App() {
     <div className="">
       <NavContainer handlePageChange={handlePageChange} className=""/>
     {/* __center section being changed and rendered__ */}
-    {/* __HomeMainContent,About__ */}
+    {/* __HomeMainContent,About, Experience, Work, Contact__ */}
       {renderPage()} 
     {/* __back button, home button, forward button__ */}
       <Footer handlePageChange={handlePageChange} className=""/>

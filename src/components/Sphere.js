@@ -41,23 +41,28 @@ import uvMap from '../images/worldUvMap.jpg';
 //     renderer.render(scene, camera);
 // }
 
-const Vis = () => {
+const Sphere = () => {
     const mount = useRef(null)
-    const [isAnimating, setAnimating] = useState(true)
+    // const currentHash = window.location.hash
+    // console.log(currentHash)
+    // const [isAnimating, setAnimating] = useState(currentHash)
+    // console.log("my hashy", isAnimating)
     const controls = useRef(null)
+    console.log("fire firing of mount", mount)
     //immeditely triggers []
     useEffect(() => {
-        // let width = mount.current.clientWidth
-        // let height = mount.current.clientHeight
-        let width = window.innerWidth
-        let height = window.innerHeight
+        // mount.currentHash = window.location.hash
+        let width = mount.current.clientWidth
+        let height = mount.current.clientHeight
+        // let width = window.innerWidth
+        // let height = window.innerHeight
         let frameId
 
        
         const scene = new THREE.Scene()
         const camera = new THREE.PerspectiveCamera(70, width / height, 1, 1000)
         const renderer = new THREE.WebGLRenderer({ antialias: true })
-        const geometry = new THREE.SphereGeometry(.8, 50, 50)
+        const geometry = new THREE.SphereGeometry(1.4, 50, 50)
         const texture = new THREE.TextureLoader().load(uvMap)
         const material = new THREE.MeshBasicMaterial({ map: texture })
         // const material = new THREE.ShaderMaterial({
@@ -72,8 +77,12 @@ const Vis = () => {
         // controls.enableZoom = true;
         // controls.zoomSpeed = 1.2;
         // controls.update();
-
-        camera.position.z = 6
+        if (mount.current.clientWidth < 400 ) {
+            camera.position.z = 7
+        } else {
+            camera.position.z = 4
+        }
+       
         scene.add(sphere)
         renderer.setClearColor('#FFFFFF')
         renderer.setSize(mount.current.clientWidth, mount.current.clientHeight)
@@ -91,6 +100,7 @@ const Vis = () => {
         }
 
         const handleResize = () => {
+            console.log("HI, im handleResize function")
             width = mount.current.clientWidth
             height = mount.current.clientHeight
             // width = window.innerWidth /1.75
@@ -103,8 +113,9 @@ const Vis = () => {
 
         const animate = () => {
             //window.location.hash == "Home") { stop() }
-            sphere.rotation.x += 0.0001
-            sphere.rotation.y += 0.002
+            sphere.rotation.x += 0.001
+            sphere.rotation.y += 0.007
+            console.log("animating, animating....")
 
             renderScene()
             frameId = window.requestAnimationFrame(animate)
@@ -127,13 +138,15 @@ const Vis = () => {
         // console.log("yeeeeeee", mount.current.childNodes.length > 1)
         window.addEventListener('resize', handleResize)
         start()
-        console.log(mount.current)
         controls.current = { start, stop }
+        console.log(mount.current)
 
-            return () => {
+        return () => {
             stop()
             window.removeEventListener('resize', handleResize)
-            mount.current.removeChild(renderer.domElement)
+            if(mount.current) {
+                mount.current.removeChild(renderer.domElement)
+            }
 
             scene.remove(sphere)
             geometry.dispose()
@@ -149,9 +162,10 @@ const Vis = () => {
     //         controls.current.stop()
     //     }
     // }, [isAnimating])
-
-    // return <div className="vis h-[80vh] w-[90vw] flex items-center justify-center" ref={mount} onClick={() => setAnimating(!isAnimating)} />
-    return <div className="vis h-[80vh] w-[90vw] flex items-center justify-center" ref={mount} />
+    console.log("MYMOUNT", mount.current)
+    // return <div className="sphere h-[80vh] w-[90vw] flex items-center justify-center" ref={mount} onClick={() => setAnimating(!isAnimating)} />
+    return <div className="sphere h-[80vh] w-[90vw] flex items-center justify-center" ref={mount} />
 }
+console.log("this my sphere", )
 
-export default Vis;
+export default Sphere;
