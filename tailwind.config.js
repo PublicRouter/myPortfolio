@@ -20,6 +20,7 @@ module.exports = {
         OpenSans: ["Open Sans", "sans-serif"],
       },
       animation: {
+        'pulse-slow': 'pulse 5s cubic-bezier(0.4, 0, 0.6, 1) infinite',
         'spin-slow': 'spin 16s linear infinite',
         'spin-double-slow': 'spin 32s linear infinite',
         'reverse-spin': 'reverse-spin 16s linear infinite'

@@ -2,10 +2,10 @@ import React from 'react'
 
 function About() {
   return (
-    <div className='min-h-[80vh] flex justify-center items-center'>
-        <div className='w-4/5 lg:pb-4 lg:w-3/5 text-center bg-blue-500 rounded-xl border-2 border-blue-200'>
-            <section className='font-OpenSans text-white p-4 mb-6 mt-6 mx-4 bg-blue-400 border-2 rounded-xl text-sm md:text-base'>
-                <h1 className='font-Oswald text-center text-white text-xl font-bold mb-2'>About Me</h1>
+    <div className='min-h-[82vh] flex justify-center items-center'>
+        <div className='w-4/5 lg:w-3/5 text-center rounded-xl border-4 border-blue-500 bg-blue-200'>
+            <section className='font-OpenSans text-white p-4 mb-4 mt-4 mx-4 bg-blue-600 border-2 rounded-xl text-sm md:text-base'>
+                <h1 className='font-Oswald text-center text-white text-xl font-bold mb-2 tracking-wide'>About Me</h1>
                 <p>Innovative, task-driven professional with a strong interest in all things web related. 
                   Self-taught hands on experience with a range of different tech from website design, to 3D modeling and rendering, to network communication protocols and cyber security. 
                   Graduated UT-Austin full-stack web developer bootcamp in Jan. of 2022, where I met a lot of great mentors and colleauges who have helped guide me on the right path.

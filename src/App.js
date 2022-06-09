@@ -15,7 +15,7 @@ function App() {
 
   // check value of currentPage state
   const renderPage = () => {
-    //change to switch statement???????
+    //change to switch statement?
     if (currentPage === 'HomeMainContent') {
       return <HomeMainContent handlePageChange={handlePageChange} className="" />;    
     }
@@ -37,19 +37,7 @@ function App() {
 
   //switching state of currentPage
   const handlePageChange = (page) => setCurrentPage(page);
-  // console.log("this is my currentPage", currentPage)
 
-  // function renderPageTest() {
-  //   if (window.location.hash === "#About") {
-  //     return <About /> 
-  //   }
-
-  //   if (window.location.hash === "#Home") {
-  //     return <HomeMainContent />
-  //   }
-
-  //   return <HomeMainContent />
-  // }
   
   return (
     // __entire screen__
@@ -66,14 +54,3 @@ function App() {
 }
 
 export default App;
-
-{/* <h2 className="">
-Hello my friends.
-</h2>
-<a
-className="cursor-pointer"
-href="https://www.google.com/"
-target="_blank"
->
-Google.com
-</a> */}

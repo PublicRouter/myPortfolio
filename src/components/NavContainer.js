@@ -8,12 +8,6 @@ function NavContainer({ handlePageChange }) {
       <h1 className="font-Oswald text-blue-600 text-3xl font-italics pl-3 flex items-center">
         James Garinger
       </h1>
-      {/* <div className="space-y-2 flex flex-col justify-center pr-5">
-        <div className="w-8 h-0.5 bg-blue-600"></div>
-        <div className="w-8 h-0.5 bg-blue-600"></div>
-        <div className="w-8 h-0.5 bg-blue-600"></div>
-      </div> */}
-
       <div className="mobile-menu">
                         <input type="checkbox" className="toggler" role="checkbox" aria-checked="false" tabIndex="0" />
                         <div className='hamburger'>
@@ -23,19 +17,19 @@ function NavContainer({ handlePageChange }) {
                             <div>
                                 <div>
                                     <ul className="text-blue-500">
-                                        <li>
-                                            <a onClick={(e) => {e.preventDefault(); handlePageChange("Home")}} href="Home">Home</a>
+                                        <li className='z-20'>
+                                            <a onClick={(e) => {handlePageChange("Home")}} href="Home">Home</a>
                                         </li>
-                                        <li>
-                                            <a onClick={(e) => {e.preventDefault(); handlePageChange("About")}} href="About">About</a>
+                                        <li className='z-20'>
+                                            <a className='z-20' onClick={(e) => {e.preventDefault(); handlePageChange("About")}} href="About">About</a>
                                         </li>
-                                        <li>
+                                        <li className='z-20'>
                                             <a onClick={(e) => {e.preventDefault(); handlePageChange("Experience")}} href="Skills">Skills</a>
                                         </li>
-                                        <li>
+                                        <li className='z-20'>
                                             <a onClick={(e) => {e.preventDefault(); handlePageChange("Work")}} href="Work">Work</a>
                                         </li>
-                                        <li>
+                                        <li className='z-20'>
                                             <a onClick={(e) => {e.preventDefault(); handlePageChange("Contact")}} href="Contact">Contact</a>
                                         </li>                                          
                                     </ul>

@@ -9,16 +9,16 @@ function HomeMainContent( {handlePageChange} ) {
 
  
   return (
-    <div className="flex flex-col min-h-[80vh] max-h-[80vh] justify-center">
+    <div className="flex flex-col min-h-[82vh] max-h-[82vh] justify-center">
     {/* image circle wrapper */}
-      <div className="shadow-xl mb-8 mx-auto w-48  h-48 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full flex justify-center items-center">
-        <div className="shadow-xl m-auto w-44 h-44 relative bg-blue-200 rounded-full flex justify-center items-center">
-          <img src={image1} alt="" className="bg-blue-300 w-[160px] h-[160px] md:w-[165px] md:h-[165px] rounded-full" />
+      <div className="shadow-xl mb-3 mx-auto sm:mb-3 w-44 h-44 sm:h-[30vh] bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full flex justify-center items-center">
+        <div className="shadow-xl m-auto w-40 h-40 relative bg-blue-200 rounded-full flex justify-center items-center">
+          <img src={image1} alt="" className="bg-blue-300 w-[130px] h-[130px] md:w-[150px] md:h-[150px] rounded-full" />
         </div>
       </div>
       {/* Full Stack Developer Text */}
       <div className="mx-auto text-center h-min">
-        <h1 className="font-OpenSans bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-500 text-transparent m-auto z-20 text-2xl text-shadow-lg w-fit">Full-Stack Web Developer</h1>
+        <h1 className="font-OpenSans font-bold bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-500 text-transparent m-auto z-20 text-2xl text-shadow-lg w-fit">Full-Stack Web Developer</h1>
       </div>
       {/* button menu */}
       <div className='w-32 mt-3 mb-8 p-2 grid grid-cols-2 gap-y-3 gap-x-2 bg-white-200 m-auto text-xs justify-items-center items-center'>

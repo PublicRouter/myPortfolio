@@ -13,7 +13,7 @@
     z-index: 2;
     cursor: pointer;
     width: 60px;
-    height: 60px;
+    height: 6vh;
     opacity: 0;
   }
 
@@ -23,9 +23,9 @@
     left: 0;
     z-index: 1;
     width: 65px;
-    height: 55px;
+    height: 6vh;
     padding: 1rem;
-    background: rgb(255, 255, 255);
+    background: transparent;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -138,6 +138,7 @@
     color: rgb(255, 255, 255);
     font-size: 1.5rem;
     padding: 1rem;
+    z-index: 1;
   }
 
   .mobile-menu .menu > div > div > ul > li > a {
