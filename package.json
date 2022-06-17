@@ -1,4 +1,5 @@
 {
+  "homepage": "https://publicrouter.github.io/myPortfolio/",
   "name": "myportfolio",
   "version": "0.1.0",
   "public": true,
@@ -9,6 +10,8 @@
     "three": "^0.140.2"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "eject": "react-scripts eject"
@@ -32,8 +35,8 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.7",
+    "gh-pages": "^4.0.0",
     "postcss": "^8.4.13",
     "tailwindcss": "^3.0.24"
-  
   }
 }
