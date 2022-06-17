@@ -11,13 +11,16 @@ module.exports = {
     "./src/components/About.js",
     "./src/components/ProjectExports.js",
     "./src/components/Sphere.js",
-
+    "./src/components/Hamburger.js",
+    "./src/components/Header.js",
   ],
   theme: {
     extend: {
       fontFamily: {
         Oswald: ["Oswald", "sans-serif"],
         OpenSans: ["Open Sans", "sans-serif"],
+        Cursive1: ["La Belle Aurore", "cursive"],
+        DancingScript: ["La Belle Aurore", "cursive"],
       },
       animation: {
         'pulse-slow': 'pulse 5s cubic-bezier(0.4, 0, 0.6, 1) infinite',

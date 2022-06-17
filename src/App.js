@@ -1,7 +1,8 @@
 import './App.css';
 import React, { useState } from 'react';
 
-import NavContainer from './components/NavContainer';
+import Header from './components/Header';
+// import NavContainer from './components/NavContainer';
 import HomeMainContent from './components/HomeMainContent';
 //or
 import About from "./components/About"
@@ -41,8 +42,9 @@ function App() {
   
   return (
     // __entire screen__
-    <div className="">
-      <NavContainer handlePageChange={handlePageChange} className=""/>
+    <div className="min-h-[100vh] flex flex-col">
+      {/* <NavContainer handlePageChange={handlePageChange} className=""/> */}
+      <Header handlePageChange={handlePageChange}/>
     {/* __center section being changed and rendered__ */}
     {/* __HomeMainContent,About, Experience, Work, Contact__ */}
       {renderPage()} 

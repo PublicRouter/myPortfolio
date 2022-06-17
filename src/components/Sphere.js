@@ -22,7 +22,7 @@ const Sphere = () => {
         const scene = new THREE.Scene()
         const camera = new THREE.PerspectiveCamera(70, width / height, 1, 1000)
         const renderer = new THREE.WebGLRenderer({ antialias: true })
-        const geometry = new THREE.SphereGeometry(1.3, 50, 50)
+        const geometry = new THREE.SphereGeometry(1.1, 50, 50)
         const texture = new THREE.TextureLoader().load(uvMap)
         const material = new THREE.MeshBasicMaterial({ map: texture })
         //IMPLEMENT- CUSTOM SHADER MATERIAL
@@ -114,7 +114,7 @@ const Sphere = () => {
     // }, [isAnimating])
     console.log("MYMOUNT", mount.current)
     // return <div className="sphere h-[80vh] w-[90vw] flex items-center justify-center" ref={mount} onClick={() => setAnimating(!isAnimating)} />
-    return <div className="sphere h-[73vh] w-[90vw] flex items-center justify-center bg-transparent" ref={mount} />
+    return <div className="sphere h-[72vh] w-[90vw] flex items-center justify-center bg-transparent" ref={mount} />
 }
 
 export default Sphere;
