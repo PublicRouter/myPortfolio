@@ -12,11 +12,11 @@ html {
 }
 
 body {
-    height: 100vh;
+    height: 100%;
 }
 
 #root {
- min-height: 100%;
+ min-height: 100vh;
  /* background-image: linear-gradient(rgba(238, 255, 0, 0.479), rgba(255, 255, 255, 0.849), rgba(238, 255, 0, 0.479)); */
  /* background-image: url(https://cdn.worktechacademy.com/uploads/2020/02/AdobeStock_226547789-scaled.jpeg);
  background-repeat: no-repeat;

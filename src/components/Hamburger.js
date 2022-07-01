@@ -10,12 +10,12 @@ export default function Hamburger({handlePageChange}) {
         {/* <section className="MOBILE-MENU flex lg:hidden"> */}
         <section className="MOBILE-MENU flex">
           <div
-            className="HAMBURGER-ICON space-y-2"
+            className="HAMBURGER-ICON space-y-1 pl-2"
             onClick={() => setIsNavOpen((prev) => !prev)} // toggle isNavOpen state on click
           >
-            <span className="block h-0.5 w-8 animate-pulse bg-blue-600"></span>
-            <span className="block h-0.5 w-8 animate-pulse bg-blue-600"></span>
-            <span className="block h-0.5 w-8 animate-pulse bg-blue-600"></span>
+            <span className="block h-0.5 w-6 animate-pulse bg-blue-600"></span>
+            <span className="block h-0.5 w-6 animate-pulse bg-blue-600"></span>
+            <span className="block h-0.5 w-6 animate-pulse bg-blue-600"></span>
           </div>
            {/* toggle class based on isNavOpen state */}
           <div className={isNavOpen ? "showMenuNav" : "hideMenuNav"}> 
@@ -36,24 +36,24 @@ export default function Hamburger({handlePageChange}) {
                 <line x1="6" y1="6" x2="18" y2="18" />
               </svg>
             </div>
-            <ul className="MENU-LINK-MOBILE-OPEN flex flex-col items-center justify-between min-h-[250px] text-sm">
+            <ul className="MENU-LINK-MOBILE-OPEN flex flex-col items-center justify-between min-h-[250px] text-sm cursor-pointer">
               <li className="border-b border-gray-400 my-3 uppercase">
-                <a href="/home" onClick={() => setIsNavOpen(false)}>Home</a>
+              <a onClick={(e) => {handlePageChange("Home"); setIsNavOpen(false); e.preventDefault()}}>Home</a>
               </li>
               <li className="border-b border-gray-400 my-3 uppercase">
-                <a href="/about"  onClick={(e) => {handlePageChange("About"); setIsNavOpen(false); e.preventDefault()}}>About</a>
+                <a onClick={(e) => {handlePageChange("About"); setIsNavOpen(false); e.preventDefault()}}>About</a>
               </li>
               <li className="border-b border-gray-400 my-3 uppercase">
-                <a href="/portfolio" onClick={(e) => {handlePageChange("Experience"); setIsNavOpen(false); e.preventDefault()}}>Skills</a>
+                <a onClick={(e) => {handlePageChange("Experience"); setIsNavOpen(false); e.preventDefault()}}>Skills</a>
               </li>
               <li className="border-b border-gray-400 my-3 uppercase">
-                <a href="/contact" onClick={(e) => {handlePageChange("Work"); setIsNavOpen(false); e.preventDefault()}}>Work</a>
+                <a onClick={(e) => {handlePageChange("Work"); setIsNavOpen(false); e.preventDefault()}}>Work</a>
               </li>
               <li className="border-b border-gray-400 my-3 uppercase">
                 <a href="https://docs.google.com/document/d/16DHa5QE9HnC4FeNqHHYzVOuuieNtRsSS/edit?usp=sharing&ouid=116539845614554488994&rtpof=true&sd=true" target="_blank">Resume</a>
               </li>
               <li className="border-b border-gray-400 my-3 uppercase">
-                <a href="/contact" onClick={(e) => {handlePageChange("Contact"); setIsNavOpen(false); e.preventDefault()}}>Contact</a>
+                <a onClick={(e) => {handlePageChange("Contact"); setIsNavOpen(false); e.preventDefault()}}>Contact</a>
               </li>
             </ul>
           </div>

@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/myPortfolio/static/css/main.db4ec624.css",
+    "main.js": "/myPortfolio/static/js/main.8e7a54f8.js",
+    "static/media/img3 - Copy.png": "/myPortfolio/static/media/img3 - Copy.845c15f98f88972e0a87.png",
+    "static/media/worldUvMap.jpg": "/myPortfolio/static/media/worldUvMap.29b1fad6bc61a36958ad.jpg",
+    "static/media/battleGameApp3.jpg": "/myPortfolio/static/media/battleGameApp3.27b21f7140fa881acb72.jpg",
+    "static/media/leverageWo.jpg": "/myPortfolio/static/media/leverageWo.092af8e67e8629b1ba3c.jpg",
+    "static/media/fitnessTracker.jpg": "/myPortfolio/static/media/fitnessTracker.2b050bbcf9d237b5ce7f.jpg",
+    "static/media/ExpenseTracker.jpg": "/myPortfolio/static/media/ExpenseTracker.92688470e8299db42db0.jpg",
+    "static/media/img4.jpg": "/myPortfolio/static/media/img4.d8168fc083cda6ce52ee.jpg",
+    "static/media/jesterImg.jpg": "/myPortfolio/static/media/jesterImg.d8dd22df04228a1328d1.jpg",
+    "static/media/img3.jpg": "/myPortfolio/static/media/img3.29728caa6eee83e3aa81.jpg",
+    "static/media/img5.jpg": "/myPortfolio/static/media/img5.972e3c0b55165afbeb6f.jpg",
+    "static/media/img1.jpg": "/myPortfolio/static/media/img1.1f80e9b4e67d816f196e.jpg",
+    "static/media/sips2.jpg": "/myPortfolio/static/media/sips2.824d3db7c8b61efa817f.jpg",
+    "static/media/img2.jpg": "/myPortfolio/static/media/img2.bcf3c221d7b4e2faf311.jpg",
+    "static/media/insta.svg": "/myPortfolio/static/media/insta.eb411dc687df2b517c0957f1f79cf51f.svg",
+    "static/media/pin.svg": "/myPortfolio/static/media/pin.cd4e3d595f14271ea009cd8dc923624d.svg",
+    "static/media/githubIcon.svg": "/myPortfolio/static/media/githubIcon.ca7883eb5e393b121d8f93a851626042.svg",
+    "static/media/github.svg": "/myPortfolio/static/media/github.392eeebcfd8a5f97883e83cd933df09a.svg",
+    "static/media/twitter.svg": "/myPortfolio/static/media/twitter.dbf8c8da7aabab07c361cf88273b4ff8.svg",
+    "index.html": "/myPortfolio/index.html",
+    "static/media/linkedIn.svg": "/myPortfolio/static/media/linkedIn.0b714c7974197eb6432693f5c6dced6f.svg",
+    "static/media/linkedin.svg": "/myPortfolio/static/media/linkedin.829b4ee9fa5408f1006b18c522edacd9.svg",
+    "static/media/fb.svg": "/myPortfolio/static/media/fb.d09f6269148a8fcbdb1008ef8c7f153f.svg",
+    "main.db4ec624.css.map": "/myPortfolio/static/css/main.db4ec624.css.map",
+    "main.8e7a54f8.js.map": "/myPortfolio/static/js/main.8e7a54f8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.db4ec624.css",
+    "static/js/main.8e7a54f8.js"
+  ]
+}

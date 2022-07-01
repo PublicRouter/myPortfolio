@@ -12,13 +12,13 @@ import Hamburger from "./Hamburger"
 export default function Header({ handlePageChange }) {
   return (
     <>
-      <header className='flex justify-between pt-4 pr-4 pl-4 flex-wrap h-[20%]'>
+      <header className='flex justify-between p-3 flex-wrap h-[20%]'>
         {/* Mobile hamburger Menu */}
           <Hamburger handlePageChange={handlePageChange}/>
           {/* name or brand icon */}
         
           {/* Social Media Contact */}
-          <ul className='socialDiv text-xs flex p-1 space-around'>
+          <ul className='text-xs flex p-1 space-around'>
               <a href="https://twitter.com" target="_blank" className="m-1">
                 <img src={twitterIcon} />
               </a>
@@ -32,7 +32,7 @@ export default function Header({ handlePageChange }) {
                 <img src={linkedinIcon} />
               </a>
           </ul>
-          <h1 className='text-[1.7em] flex justify-center w-full font-Oswald text-stone-600'>James Garinger</h1>
+          <h1 className='text-center text-[1.7em] justify-center w-full font-Oswald text-stone-600'>James Garinger</h1>
       </header>
       
     </>

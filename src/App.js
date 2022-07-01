@@ -18,13 +18,13 @@ function App() {
   const renderPage = () => {
     //change to switch statement?
     if (currentPage === 'HomeMainContent') {
-      return <HomeMainContent handlePageChange={handlePageChange} className="" />;    
+      return <HomeMainContent handlePageChange={handlePageChange} />;    
     }
     if (currentPage === 'About') {
       return <About className="" />;  
     }
     if (currentPage === 'Work') {
-      return <Work />
+      return <Work className="min-h-full" />
     }
     if (currentPage === 'Experience') {
       return <Experience />
@@ -42,7 +42,7 @@ function App() {
   
   return (
     // __entire screen__
-    <div className="min-h-[100vh] flex flex-col">
+    <div className="">
       {/* <NavContainer handlePageChange={handlePageChange} className=""/> */}
       <Header handlePageChange={handlePageChange}/>
     {/* __center section being changed and rendered__ */}
