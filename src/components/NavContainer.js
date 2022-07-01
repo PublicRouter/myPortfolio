@@ -18,19 +18,19 @@ function NavContainer({ handlePageChange }) {
                       <div>
                           <ul className="text-blue-500">
                               <li className='z-20'>
-                                  <a onClick={(e) => { handlePageChange("Home") }} href="Home">Home</a>
+                                  <a onClick={(e) => { handlePageChange("Home") }}>Home</a>
                               </li>
                               <li className='z-20'>
-                                  <a className='z-20' onClick={(e) => { e.preventDefault(); handlePageChange("About") }} href="About">About</a>
+                                  <a className='z-20' onClick={(e) => { e.preventDefault(); handlePageChange("About") }} >About</a>
                               </li>
                               <li className='z-20'>
-                                  <a onClick={(e) => { e.preventDefault(); handlePageChange("Experience") }} href="Skills">Skills</a>
+                                  <a onClick={(e) => { e.preventDefault(); handlePageChange("Experience") }} >Skills</a>
                               </li>
                               <li className='z-20'>
-                                  <a onClick={(e) => { e.preventDefault(); handlePageChange("Work") }} href="Work">Work</a>
+                                  <a onClick={(e) => { e.preventDefault(); handlePageChange("Work") }} >Work</a>
                               </li>
                               <li className='z-20'>
-                                  <a onClick={(e) => { e.preventDefault(); handlePageChange("Contact") }} href="Contact">Contact</a>
+                                  <a onClick={(e) => { e.preventDefault(); handlePageChange("Contact") }} >Contact</a>
                               </li>
                           </ul>
                       </div>
